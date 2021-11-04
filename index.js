@@ -51,7 +51,15 @@ nfts.from(".nft-4", { opacity: 0, duration: 0.5 });
 
 const openNavButton = document.querySelector("#openNav");
 const closeNavButton = document.querySelector("#closeNav");
+const mobileNavLinks = document.querySelectorAll(".mobileNavLinks");
 const mobileNav = document.querySelector("#mobileNav");
+
+Array.from(mobileNavLinks).forEach((navLink) => {
+  console.log(navLink);
+  navLink.addEventListener("click", () => {
+    mobileNav.classList.add("hidden");
+  });
+});
 
 openNavButton.addEventListener("click", () => {
   mobileNav.classList.remove("hidden");

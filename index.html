@@ -20,7 +20,7 @@
 </head>
 
 <body class="bg-black relative">
-    <nav class="w-full px-6 md:pb-8 pb-4 pt-8 md:pt-10 z-20 max-w-screen-2xl mx-auto">
+    <nav class="absolute top-0 right-0 left-0 w-full px-6 md:pb-8 pb-4 pt-8 md:pt-10 z-20 max-w-screen-2xl mx-auto">
         <div class="flex items-center justify-between">
             <div>
                 <img src="./assets/logo.svg" alt="" class="w-32 md:w-44 h-auto">
@@ -61,10 +61,21 @@
         </div>
         <div class="h-screen flex flex-col justify-center">
             <ul class="text-white flex flex-col justify-center mb-12">
-                <li class="text-3xl text-center font-bold mb-6 font-nunito">Why AlieNFT?</li>
-                <li class="text-3xl text-center font-bold mb-6 font-nunito">Marketplace</li>
-                <li class="text-3xl text-center font-bold mb-6 font-nunito">Tokenomics</li>
-                <li class="text-3xl text-center font-bold mb-6 font-nunito">Roadmap</li>
+                <li class="text-3xl text-center font-bold mb-6 font-nunito">
+                    <a href="#home" class="mobileNavLinks">Home</a>
+                </li>
+                <li class="text-3xl text-center font-bold mb-6 font-nunito">
+                    <a href="#why" class="mobileNavLinks">Why AlieNFT?</a>
+                </li>
+                <li class="text-3xl text-center font-bold mb-6 font-nunito">
+                    <a href="#marketplace" class="mobileNavLinks">Marketplace</a>
+                </li>
+                <li class="text-3xl text-center font-bold mb-6 font-nunito">
+                    <a href="#tokenomics" class="mobileNavLinks">Tokenomics</a>
+                </li>
+                <li class="text-3xl text-center font-bold mb-6 font-nunito">
+                    <a href="#roadmap" class="mobileNavLinks">Roadmap</a>
+                </li>
             </ul>
             <button class="bg-primary px-8 py-2 text-lg rounded-md font-medium">Join Presale</button>
         </div>
@@ -72,7 +83,7 @@
     </nav>
     <div class="absolute left-0 w-full h-full" id="landing"></div>
     <section id="home"
-        class="max-w-screen-xl relative mx-auto px-8 block md:flex items-center xl:py-20 py-2 mb-12 md:mb-0">
+        class="max-w-screen-xl relative mx-auto px-8 block md:flex md:pt-12 md:pb-0 py-44 items-center md:h-screen ">
         <div class="w-full md:w-1/2 pr-0 md:pr-16 z-20 mb-32 md:mb-0 relative">
             <h1
                 class="text-3xl md:text-5xl text-white text-center md:text-left font-bold mb-12 landing-heading font-alien">
@@ -88,7 +99,7 @@
                 presale</button>
         </div>
         <div class="w-full md:w-1/2 z-20 flex justify-end relative">
-            <img src="./assets/site.png" alt="" class="w-full md:w-3/4">
+            <img src="./assets/site222.png" alt="" class="w-full md:w-3/4">
         </div>
     </section>
     <section id="why" class=" max-w-screen-xl mx-auto py-12 md:py-32 block md:flex items-center px-8 why">
@@ -156,88 +167,54 @@
         </h3>
         <div class="w-24 h-2 bg-primary mx-auto"></div>
     </section>
-    <section id="tokenomics" class="py-28 relative px-8">
-        <div class="max-w-screen-lg mx-auto">
+    <section id="tokenomics" class="md:py-28 py-12 relative px-8">
+        <div class="max-w-screen-xl mx-auto">
             <h1 class="text-3xl md:text-5xl font-bold text-white text-center mx-auto mb-12 font-alien">Tokenomics</h1>
             <p class="text-2xl font-light text-white text-center font-nunito font-light leading-8 mb-24">To maintain the
                 long-term value of the
                 $NFTG token
                 supply, we have a deflationary plan to take out tiny bits
                 of the 1 Billion $NFTG token supply through buybacks and burnout. </p>
-            <div class="w-full md:w-1/2 mx-auto mb-32">
-                <div class="container">
-                    <svg xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="100" cy="100" class="donut" r="50" stroke-width="50" stroke="#ff8c69" fill="none" />
-                        <circle cx="100" cy="100" class="donut" r="50" stroke-width="50" stroke="#ffff00" fill="none" />
-                        <circle cx="100" cy="100" class="donut" r="50" stroke-width="50" stroke="#008000" fill="none" />
-                        <circle cx="100" cy="100" class="donut" r="50" stroke-width="50" stroke="#87CEFA" fill="none" />
-                    </svg>
+            <div class="w-full block md:grid grid-cols-2 gap-x-16 mx-auto my-44">
+                <div class="mb-24 md:mb-0">
+                    <div class="mb-8">
+                        <img src="./assets/tokenDist.png" alt="" class="w-full md:w-2/3 mx-auto">
+                    </div>
+                    <p class="text-lg md:text-2xl text-center text-gray-400 font-medium">Taxes destribution</p>
                 </div>
-                <ul class="flex justify-center flex-wrap">
-                    <li class="flex items-center mx-3 mb-6">
-                        <div class="w-6 h-6 bg-green-300 mr-3"></div>
-                        <span class="font-medium text-white">Presale</span>
-                    </li>
-                    <li class="flex items-center mx-3 mb-6">
-                        <div class="w-6 h-6 bg-green-300 mr-3"></div>
-                        <span class="font-medium text-white">Liquidity</span>
-                    </li>
-                    <li class="flex items-center mx-3 mb-6">
-                        <div class="w-6 h-6 bg-green-300 mr-3"></div>
-                        <span class="font-medium text-white">Airdrop</span>
-                    </li>
-                    <li class="flex items-center mx-3 mb-6">
-                        <div class="w-6 h-6 bg-green-300 mr-3"></div>
-                        <span class="font-medium text-white">Burn</span>
-                    </li>
-                    <li class="flex items-center mx-3 mb-6">
-                        <div class="w-6 h-6 bg-green-300 mr-3"></div>
-                        <span class="font-medium text-white">Advisors</span>
-                    </li>
-                    <li class="flex items-center mx-3 mb-6">
-                        <div class="w-6 h-6 bg-green-300 mr-3"></div>
-                        <span class="font-medium text-white">Rewards</span>
-                    </li>
-                </ul>
+                <div class="mb-24 md:mb-0">
+                    <div class="mb-8">
+                        <img src="./assets/tokenomics.png" alt="" class="w-full md:w-2/3 mx-auto">
+                    </div>
+                    <p class="text-lg md:text-2xl text-center text-gray-400 font-medium">Token destribution</p>
+                </div>
             </div>
         </div>
-        <div class="max-w-screen-xl mx-auto">
-            <div class="md:grid grid-cols-3 gap-x-24">
+        <div class="max-w-screen-lg mx-auto">
+            <div class="md:grid grid-cols-4 gap-x-24">
                 <div class="text-white mb-12 md:mb-12">
                     <div class="flex justify-center">
                         <i class="ph-drop text-primary text-6xl mx-auto mb-12"></i>
                     </div>
-                    <h3 class="mb-8 text-2xl text-center font-alien font-medium">2% Liquidity</h3>
-                    <p class="text-lg text-center font-light font-nunito">Every trade contributes to an auto-generated
-                        liquidity
-                        pool
-                        which is
-                        locked in PancakeSwap. Initial
-                        LP created by locking BNB raised in pre-sale.</p>
+                    <h3 class="mb-8 text-2xl text-center font-alien font-medium">3% Rewards</h3>
                 </div>
                 <div class="text-white mb-12 md:mb-12">
                     <div class="flex justify-center">
                         <i class="ph-cardholder text-primary text-6xl mx-auto mb-12"></i>
                     </div>
-                    <h3 class="mb-8 text-2xl text-center font-alien font-medium">2% Liquidity</h3>
-                    <p class="text-lg text-center font-light font-nunito">Every trade contributes to an auto-generated
-                        liquidity
-                        pool
-                        which is
-                        locked in PancakeSwap. Initial
-                        LP created by locking BNB raised in pre-sale.</p>
+                    <h3 class="mb-8 text-2xl text-center font-alien font-medium">3% Burn</h3>
                 </div>
                 <div class="text-white mb-12 md:mb-12">
                     <div class="flex justify-center">
                         <i class="ph-fire text-primary text-6xl mx-auto mb-12"></i>
                     </div>
-                    <h3 class="mb-8 text-2xl text-center font-alien font-medium">2% Liquidity</h3>
-                    <p class="text-lg text-center font-light font-nunito">Every trade contributes to an auto-generated
-                        liquidity
-                        pool
-                        which is
-                        locked in PancakeSwap. Initial
-                        LP created by locking BNB raised in pre-sale.</p>
+                    <h3 class="mb-8 text-2xl text-center font-alien font-medium">3% Marketing</h3>
+                </div>
+                <div class="text-white mb-12 md:mb-12">
+                    <div class="flex justify-center">
+                        <i class="ph-fire text-primary text-6xl mx-auto mb-12"></i>
+                    </div>
+                    <h3 class="mb-8 text-2xl text-center font-alien font-medium">3% Buyback</h3>
                 </div>
             </div>
         </div>
@@ -248,15 +225,16 @@
         <div class="w-24 h-2 bg-primary mx-auto mb-24"></div>
         <h1 class="text-5xl font-bold text-white text-center mx-auto mb-24">Roadmap</h1>
         <div>
-            <img src="./assets/roadmap.png" alt="" class="w-full mx-auto">
+            <img src="./assets/roadmap.png" alt="" class="hidden md:block w-full mx-auto">
+            <img src="./assets/roadmap_mobile.png" alt="" class="block md:hidden w-full mx-auto">
         </div>
     </section>
-    <section class="max-w-screen-xl mx-auto px-8 py-12 md:py-28">
+    <section class="max-w-screen-xl mx-auto px-8 pt-20 md:py-28">
         <div class="md:grid grid-cols-4 items-center gap-x-12">
-            <img src="./assets/coinmarketcap.png" alt="" class="md:mb-0 mb-12">
-            <img src="./assets/coingecko.png" alt="" class="md:mb-0 mb-12">
-            <img src="./assets/panckage_swap.png" alt="" class="md:mb-0 mb-12">
-            <img src="./assets/pinksale.png" alt="" class="md:mb-0 mb-12">
+            <img src="./assets/coinmarketcap.png" alt="" class="md:mb-0 mb-12 w-2/3 mx-auto md:w-full">
+            <img src="./assets/coingecko.png" alt="" class="md:mb-0 mb-12 w-2/3 mx-auto md:w-full">
+            <img src="./assets/panckage_swap.png" alt="" class="md:mb-0 mb-12 w-2/3 mx-auto md:w-full">
+            <img src="./assets/pinksale.png" alt="" class="md:mb-0 mb-12 w-2/3 mx-auto md:w-full">
         </div>
     </section>
     <section id="join" class="max-w-screen-lg mx-auto px-8 pt-28 pb-16">
@@ -270,9 +248,9 @@
             </a>
         </button>
     </section>
-    <footer class="max-w-screen-lg mx-auto">
+    <footer class="relative z-30 max-w-screen-lg pb-16 mx-auto">
         <div class="flex justify-center items-center mb-12">
-            <a href="">
+            <a href="https://t.me/AlieNftBsc">
                 <i class="ph-telegram-logo-bold text-white text-2xl mx-6"></i>
             </a>
             <a href="https://www.instagram.com/alienft_bsc/">
