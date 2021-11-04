@@ -52,12 +52,24 @@ nfts.from(".nft-4", { opacity: 0, duration: 0.5 });
 const openNavButton = document.querySelector("#openNav");
 const closeNavButton = document.querySelector("#closeNav");
 const mobileNavLinks = document.querySelectorAll(".mobileNavLinks");
+const nftBocks = document.querySelectorAll(".nft-block");
 const mobileNav = document.querySelector("#mobileNav");
 
 Array.from(mobileNavLinks).forEach((navLink) => {
   console.log(navLink);
   navLink.addEventListener("click", () => {
     mobileNav.classList.add("hidden");
+  });
+});
+
+Array.from(nftBocks).forEach((nftBock) => {
+  nftBock.addEventListener("mouseenter", (e) => {
+    e.currentTarget.children[0].classList.add("hidden");
+    e.currentTarget.children[1].classList.remove("hidden");
+  });
+  nftBock.addEventListener("mouseleave", (e) => {
+    e.currentTarget.children[1].classList.add("hidden");
+    e.currentTarget.children[0].classList.remove("hidden");
   });
 });
 
