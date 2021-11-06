@@ -54,6 +54,9 @@ const closeNavButton = document.querySelector("#closeNav");
 const mobileNavLinks = document.querySelectorAll(".mobileNavLinks");
 const nftBocks = document.querySelectorAll(".nft-block");
 const mobileNav = document.querySelector("#mobileNav");
+const marketplacePopup = document.querySelector("#marketplacePopup");
+const marketplaceButton = document.querySelector("#marketplaceButton");
+const cancelPopup = document.querySelector("#cancelPopup");
 
 Array.from(mobileNavLinks).forEach((navLink) => {
   console.log(navLink);
@@ -79,4 +82,12 @@ openNavButton.addEventListener("click", () => {
 
 closeNavButton.addEventListener("click", () => {
   mobileNav.classList.add("hidden");
+});
+
+marketplaceButton.addEventListener("click", () => {
+  marketplacePopup.classList.remove("hidden");
+});
+
+cancelPopup.addEventListener("click", () => {
+  marketplacePopup.classList.add("hidden");
 });

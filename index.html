@@ -51,6 +51,9 @@
                     <li class="text-xl mr-6 font-nunito">
                         <a href="#roadmap">Roadmap</a>
                     </li>
+                    <li class="text-xl mr-6 font-nunito">
+                        <a href="whitepaper.html" target="_blank">whitepaper</a>
+                    </li>
                 </ul>
                 <button class="bg-primary px-8 py-2 text-lg font-medium text-nunito"><a
                         href="https://www.pinksale.finance/#/launchpad/0xD7dfc000DeC46291fb8Dbfb9c19610583a6A21Ef?chain=BSC">Join
@@ -86,6 +89,9 @@
                 </li>
                 <li class="text-3xl text-center font-bold mb-6 font-nunito">
                     <a href="#roadmap" class="mobileNavLinks">Roadmap</a>
+                </li>
+                <li class="text-3xl text-center font-bold mb-6 font-nunito">
+                    <a href="whitepaper.html" target="_blank">whitepaper</a>
                 </li>
             </ul>
             <button class="bg-primary px-8 py-2 text-lg rounded-md font-medium">Join Presale</button>
@@ -143,35 +149,51 @@
     </section>
     <section id="marketplace"
         class="relative z-30 max-w-screen-xl mx-auto block md:flex items-center py-12 md:py-28 px-8">
+        <div id="marketplacePopup"
+            class="hidden fixed z-40 top-0 left-0 w-full h-screen bg-gray-900 bg-opacity-75 flex items-center justify-center">
+            <div
+                class="relative rounded-md w-full md:w-1/3 mx-auto bg-black h-2/3 px-16 flex flex-col items-center justify-center">
+                <button id="cancelPopup">
+                    <i class="ph-x absolute right-6 top-6 text-4xl text-white"></i>
+                </button>
+                <h1 class="text-3xl md:text-5xl font-bold font-alien text-white">The marketplace will be open
+                    soon, stay tuned...
+
+                </h1>
+            </div>
+        </div>
         <div class="w-full md:w-1/2 nft-desc mb-16">
             <h1
                 class="text-3xl md:text-5xl text-white font-bold mb-12 nft-desc-header text-center md:text-left font-alien">
                 Our marketplace</h1>
-            <p class="text-2xl font-light text-white leading-8 mb-14 text-center md:text-justify nft-desc-subheader">The
+            <p class="text-2xl font-light text-white leading-8 mb-14 text-center md:text-justify nft-desc-subheader">
+                The
                 user will be able to buy our NFT products and sell them on this plateform. Moreover, our store will
-                offer additional functions to attract and keep more clients and to improve the general user experience
+                offer additional functions to attract and keep more clients and to improve the general user
+                experience
                 on the
-                website, also we have our NFT collections ready to be dropped on the store and it will be available for
+                website, also we have our NFT collections ready to be dropped on the store and it will be available
+                for
                 sale directly after the presale.
             </p>
-            <button
+            <button id="marketplaceButton"
                 class="bg-primary px-12 py-3 text-lg font-semibold nft-desc-button block mx-auto md:ml-0 mb-12 md:mb-0">View
                 collection</button>
         </div>
         <div class="w-full md:w-1/2 md:pl-24 grid grid-cols-2 grid-rows-2 gap-6 nfts">
-            <div class="w-full h-64 bg-green-900 nft-block">
+            <div class="w-full h-64 bg-green-900 nft-1 nft-block">
                 <img src="./assets/nft1.png" alt="" class="w-full h-full object-cover">
                 <img src="./assets/nft6.png" alt="" class="hidden w-full h-full object-cover">
             </div>
-            <div class="w-full h-64 bg-green-900 nft-block">
+            <div class="w-full h-64 bg-green-900 nft-2 nft-block">
                 <img src="./assets/nft2.png" alt="" class="w-full h-full object-cover">
                 <img src="./assets/nft7.png" alt="" class="hidden w-full h-full object-cover">
             </div>
-            <div class="w-full h-64 bg-green-900 nft-block">
+            <div class="w-full h-64 bg-green-900 nft-3 nft-block">
                 <img src="./assets/nft3.png" alt="" class="w-full h-full object-cover">
                 <img src="./assets/nft8.png" alt="" class="hidden w-full h-full object-cover">
             </div>
-            <div class="w-full h-64 bg-green-900 nft-block">
+            <div class="w-full h-64 bg-green-900 nft-4 nft-block">
                 <img src="./assets/nft5.png" alt="" class="w-full h-full object-cover">
                 <img src="./assets/nft9.png" alt="" class="hidden w-full h-full object-cover">
             </div>
@@ -270,7 +292,7 @@
             <img src="./assets/pinksale.png" alt="" class="md:mb-0 mb-12 w-2/3 mx-auto md:w-full">
         </div>
     </section>
-    <section id="join" class="relative z-30 max-w-screen-lg mx-auto px-8 pt-28 pb-16">
+    <section id="join" class="relative z-20 max-w-screen-lg mx-auto px-8 pt-28 pb-16">
         <div class="w-24 h-2 bg-primary mx-auto"></div>
         <h3 class="text-3xl md:text-5xl font-bold text-white text-center my-24 font-alien">
             Want to be a part of our community? Join us on telegram
@@ -281,7 +303,7 @@
             </a>
         </button>
     </section>
-    <footer class="relative z-30 max-w-screen-lg pb-16 mx-auto">
+    <footer class="relative z-20 max-w-screen-lg pb-16 mx-auto">
         <div class="flex justify-center items-center mb-12">
             <a href="https://t.me/AlieNftBsc">
                 <i class="ph-telegram-logo-bold text-white text-2xl mx-6"></i>
