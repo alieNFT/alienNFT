@@ -29,7 +29,8 @@
 </head>
 
 <body class="bg-black relative">
-    <nav class="absolute top-0 right-0 left-0 w-full px-8 md:pb-8 pb-4 pt-8 md:pt-10 z-20 max-w-screen-2xl mx-auto">
+    <nav
+        class="absolute top-0 right-0 left-0 w-full px-8 md:pb-8 pb-4 pt-8 md:pt-10 z-20 max-w-screen-2xl mx-auto navbar">
         <div class="flex items-center justify-between">
             <div>
                 <img src="./assets/logo.svg" alt="" class="w-32 md:w-44 h-auto">
@@ -118,7 +119,7 @@
                     presale</a>
             </button>
         </div>
-        <div class="w-full md:w-1/2 z-20 flex justify-end relative">
+        <div class="w-full md:w-1/2 z-20 flex justify-end relative landing-artwork">
             <img src="./assets/site222.png" alt="" class="w-full md:w-3/4">
         </div>
     </section>
@@ -140,9 +141,10 @@
             <img src="./assets/why.png" alt="">
         </div>
     </section>
-    <section class="max-w-screen-lg mx-auto py-20 md:py-28 px-8 quote">
+    <section class="max-w-screen-lg mx-auto py-20 md:py-28 px-8 quote1">
         <div class="w-24 h-2 bg-primary mx-auto"></div>
-        <h3 class="text-3xl md:text-5xl font-bold text-white text-center my-24 font-alien">The AlieNft is an Online
+        <h3 class="text-3xl md:text-5xl font-bold text-white text-center my-24 font-alien quote1text">The AlieNft is an
+            Online
             art marketplace for NFTs, where you can buy, sell and list your digital art collection.
         </h3>
         <div class="w-24 h-2 bg-primary mx-auto"></div>
@@ -165,16 +167,15 @@
         <div class="w-full md:w-1/2 nft-desc mb-16">
             <h1
                 class="text-3xl md:text-5xl text-white font-bold mb-12 nft-desc-header text-center md:text-left font-alien">
-                Our marketplace</h1>
+                Our perspective </h1>
+            <p class="text-2xl font-light text-white leading-8 mb-8 text-center md:text-justify nft-desc-subheader">
+                ALieNFT is an all-in-one platform that we are building for NFT creators, traders and collectors. Our
+                vision is to make this global art movement accessible to everyone in the world, and to help artists, art
+                collectors and enthusiasts to discover, trade, and display digital art.
+            </p>
             <p class="text-2xl font-light text-white leading-8 mb-14 text-center md:text-justify nft-desc-subheader">
-                The
-                user will be able to buy our NFT products and sell them on this plateform. Moreover, our store will
-                offer additional functions to attract and keep more clients and to improve the general user
-                experience
-                on the
-                website, also we have our NFT collections ready to be dropped on the store and it will be available
-                for
-                sale directly after the presale.
+                These NFT collections can only be acquired by buying them from the AlieNft store with ALNFT tokens and
+                it contains all types of Aliens.
             </p>
             <button id="marketplaceButton"
                 class="bg-primary px-12 py-3 text-lg font-semibold nft-desc-button block mx-auto md:ml-0 mb-12 md:mb-0">View
@@ -199,9 +200,31 @@
             </div>
         </div>
     </section>
-    <section class="max-w-screen-lg mx-auto pt-16 md:pt-28 pb-8 md:pb-16 px-8">
+    <section class="relative z-30 max-w-screen-xl mx-auto block py-12 md:py-32 px-8">
+        <div class="w-full md:w-2/3 mx-auto mb-32">
+            <h1 class="text-3xl md:text-6xl text-white font-bold mb-12 font-alien text-center">
+                Our marketplace</h1>
+            <p class="text-2xl font-light text-white leading-8 mb-14 text-center ">
+                The
+                user will be able to buy our NFT products and sell them on this plateform. Moreover, our store will
+                offer additional functions to attract and keep more clients and to improve the general user
+                experience
+                on the
+                website, also we have our NFT collections ready to be dropped on the store and it will be available
+                for
+                sale directly after the presale.
+            </p>
+        </div>
+        <div class="w-full">
+            <img src="./assets/marketplacePrototype.png" alt="">
+        </div>
+        <button id="marketplaceButton" class="bg-primary block px-32 py-5 text-lg font-bold mx-auto mb-12 md:mb-0">View
+            collection</button>
+    </section>
+    <section class="max-w-screen-lg mx-auto pt-16 md:pt-28 pb-8 md:pb-16 px-8 quote2">
         <div class="w-24 h-2 bg-primary mx-auto"></div>
-        <h3 class="text-3xl md:text-5xl font-bold text-white text-center font-alien my-24">Making art trading available
+        <h3 class="text-3xl md:text-5xl font-bold text-white text-center font-alien my-24 quote2text">Making art trading
+            available
             to everyone in the world is our cause. We will make this happen in the next few months.
         </h3>
         <div class="w-24 h-2 bg-primary mx-auto"></div>
@@ -217,13 +240,13 @@
             <div class="w-full block md:grid grid-cols-2 gap-x-16 mx-auto my-44">
                 <div class="mb-24 md:mb-0">
                     <div class="mb-8">
-                        <img src="./assets/tokenDist.png" alt="" class="w-full md:w-2/3 mx-auto">
+                        <img src="./assets/tokenDist.png" alt="" class="w-full md:9/12 mx-auto">
                     </div>
                     <p class="text-lg md:text-2xl text-center text-gray-400 font-medium">Taxes destribution</p>
                 </div>
                 <div class="mb-24 md:mb-0">
                     <div class="mb-8">
-                        <img src="./assets/tokenomics.png" alt="" class="w-full md:w-2/3 mx-auto">
+                        <img src="./assets/tokenomics.png" alt="" class="w-full md:9/12 mx-auto">
                     </div>
                     <p class="text-lg md:text-2xl text-center text-gray-400 font-medium">Token destribution</p>
                 </div>
@@ -233,7 +256,7 @@
             <div class="md:grid grid-cols-4 gap-x-16">
                 <div class="text-white mb-12 md:mb-12">
                     <div class="flex justify-center">
-                        <i class="ph-cardholder text-primary text-6xl mx-auto mb-12"></i>
+                        <i class="ph-fire text-primary text-6xl mx-auto mb-12"></i>
                     </div>
                     <h3 class="mb-8 text-2xl text-center font-alien font-medium">3% Burn</h3>
                     <p class="text-xl font-light text-center text-gray-300 font-nunito">This creates a true burn,
@@ -245,7 +268,7 @@
                 </div>
                 <div class="text-white mb-12 md:mb-12">
                     <div class="flex justify-center">
-                        <i class="ph-fire text-primary text-6xl mx-auto mb-12"></i>
+                        <i class="ph-cardholder text-primary text-6xl mx-auto mb-12"></i>
                     </div>
                     <h3 class="mb-8 text-2xl text-center font-alien font-medium">3% Marketing</h3>
                     <p class="text-xl font-light text-center text-gray-300 font-nunito">3% of each transaction will be
@@ -256,7 +279,7 @@
                 </div>
                 <div class="text-white mb-12 md:mb-12">
                     <div class="flex justify-center">
-                        <i class="ph-fire text-primary text-6xl mx-auto mb-12"></i>
+                        <i class="ph-activity text-primary text-6xl mx-auto mb-12"></i>
                     </div>
                     <h3 class="mb-8 text-2xl text-center font-alien font-medium">3% Buyback</h3>
                     <p class="text-xl font-light text-center text-gray-300 font-nunito">3% of every transaction will be
@@ -265,7 +288,7 @@
                 </div>
                 <div class="text-white mb-12 md:mb-12">
                     <div class="flex justify-center">
-                        <i class="ph-drop text-primary text-6xl mx-auto mb-12"></i>
+                        <i class="ph-gift text-primary text-6xl mx-auto mb-12"></i>
                     </div>
                     <h3 class="mb-8 text-2xl text-center font-alien font-medium">3% Rewards</h3>
                     <p class="text-xl font-light text-center text-gray-300 font-nunito">3% of each transactions are

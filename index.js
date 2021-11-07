@@ -4,28 +4,38 @@ landingSection.from(".navbar", { y: -40, opacity: 0, duration: 1 });
 landingSection.from(".landing-artwork", { opacity: 0, duration: 0.8 });
 landingSection.from(
   ".landing-heading",
-  { x: 20, opacity: 0, duration: 0.5 },
+  { y: 100, opacity: 0, duration: 0.8 },
   "-=1"
 );
-landingSection.from(".landing-subheading", {
-  x: 200,
-  opacity: 0,
-  duration: 0.5,
-});
-landingSection.from(".landing-cta", { x: 20, opacity: 0, duration: 0.5 });
+landingSection.from(
+  ".landing-subheading",
+  {
+    y: 100,
+    opacity: 0,
+    duration: 1,
+  },
+  "-=1"
+);
+landingSection.from(".landing-cta", { y: 100, opacity: 0, duration: 1 }, "-=1");
 
 var why = gsap.timeline({
   scrollTrigger: ".why",
 });
-why.from(".why-image", { opacity: 0, duration: 0.7, delay: 0.5 });
+why.from(".why-image", { opacity: 0, duration: 0.7, delay: 0.5 }, "-=1");
 why.from(".why-header", { y: 40, opacity: 0, duration: 1 }, "-=0.3");
-why.from(".why-desc", { x: 20, opacity: 0, duration: 0.5 });
+why.from(".why-desc", { y: 20, opacity: 0, duration: 0.5 });
 
 var quote = gsap.timeline({
-  scrollTrigger: ".quote",
+  scrollTrigger: ".quote1",
 });
 
-quote.from("h3", { x: 300, opacity: 0, duration: 1.2, delay: 0.5 });
+quote.from(".quote1text", { y: 200, opacity: 0, duration: 1.2, delay: 0.5 });
+
+var quote = gsap.timeline({
+  scrollTrigger: ".quote2",
+});
+
+quote.from(".quote2text", { y: 200, opacity: 0, duration: 1.2, delay: 0.5 });
 
 var nftDesc = gsap.timeline({
   scrollTrigger: ".nft-desc",
